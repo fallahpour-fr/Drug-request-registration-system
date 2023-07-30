@@ -5,7 +5,7 @@ export const View = (props: any) => {
         <div className="sidebar">
             <div className="profile">
                 <h3>Anamika Roy</h3>
-                <p>Designer</p>
+                <p>Doctor</p>
             </div>
             <ul>
                 <li>
@@ -54,8 +54,10 @@ export const View = (props: any) => {
                                         <td>{item.shape}</td>
                                         <td>{item.dose}</td>
                                         <td>{item.inventory}</td>
-                                        <td><input type="text" id={`consumption${item.id}`} placeholder="consumption" onChange={(e) => props.handleChange(e)} value={props.formData[`consumption${item.id}`]} /></td>
-                                        <td><input type="text" id={`requested${item.id}`} placeholder="requested" onChange={(e) => props.handleChange(e)} value={props.formData[`requested${item.id}`]} /></td>
+                                        <td></td>
+                                        <td></td>
+                                        {/* <td><input type="text" id={`consumption${item.id}`} placeholder="consumption" onChange={(e) => props.handleChange(e)} value={props.formData[`consumption${item.id}`]} /></td>
+                                        <td><input type="text" id={`requested${item.id}`} placeholder="requested" onChange={(e) => props.handleChange(e)} value={props.formData[`requested${item.id}`]} /></td> */}
                                     </tr>
                                 ))
                             )}
